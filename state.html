@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://fb.me/react-0.13.3.min.js"></script>
+        <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+        <title>React Components</title>
+    </head>
+    <body>
+    <div id="react-container"></div>
+    <script type="text/jsx">
+      var Checkbox = React.createClass({
+        getInitialState: function() {
+           return {checked: true}
+        },
+
+        handlesCheck: function() {
+          this.setState({checked: !this.state.checked})
+        },
+
+        render: function() {
+            var message;
+            if (this.state.checked) {
+              message = "checked";
+            } else {
+              message = "unchecked";
+            }
+
+            return (<div>
+              <input type="checkbox" onChange={this.handlesCheck} defaultChecked={this.state.checked}/>
+              <p>This box is {message}</p>
+                </div>);
+        }
+      });
+
+      React.render(<Checkbox />,
+          document.getElementById('react-container'));
+    </script>
+    </body>
+</html>
