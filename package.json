@@ -1,0 +1,23 @@
+{
+  "name": "bulletin-board",
+  "version": "1.0.0",
+  "description": "A bulletin board developed in React.",
+  "main": "Note.js",
+  "scripts": {
+    "start": "open http://localhost:4321 & httpster -p 4321"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milenam/up_and_running_reactjs.git"
+  },
+  "author": "Milena Maltsev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/milenam/up_and_running_reactjs/issues"
+  },
+  "homepage": "https://github.com/milenam/up_and_running_reactjs#readme",
+  "dependencies": {
+    "httpster": "^1.0.1",
+    "react-tools": "^0.13.3"
+  }
+}
